@@ -540,7 +540,14 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition-duration: var(--trDur);
+  transition-timing-function: ease;
 }
+
+.our-services__card:hover {
+  transform: scale(1.07);
+}
+
 .our-services__card-icon,
 .our-services__card-title {
   color: var(--yellow);
