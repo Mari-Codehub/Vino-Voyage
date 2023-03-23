@@ -19,13 +19,15 @@
     />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="icon" href="./images/icon.svg" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>VinoVoyage</title>
   </head>
   <body>
     <!-- || Header -->
     <header>
-      <div class="header-socials general-section">
+      <div class="header-socials">
         <div class="header-socials__content general-content general-flex">
           <p class="header-socials__content-description">opening hours: 24/7</p>
           <ul class="header-socials__content-icons">
@@ -51,6 +53,8 @@
             class="header-contacts__content-logo"
             src="./images/Logo.svg"
             alt="logo"
+            width="195"
+            height="60"
           />
           <div class="header-contacts__icon-boxes">
             <div class="header-contacts__icon-box">
@@ -77,6 +81,8 @@
                 <p>+01 568 345 345</p>
               </div>
             </div>
+
+            <i id="burgerIcon" class="burger-menu fa-solid fa-bars"></i>
           </div>
 
           <nav class="main-menu general-content general-flex">
@@ -97,6 +103,24 @@
             </ul>
             <button class="main-menu__button">have any questions?</button>
           </nav>
+
+          <nav id="burgerMenu" class="menu-burger">
+            <ul class="menu-burger__lists-burger">
+              <li><a href="#">home</a></li>
+              <li><a href="#">about us</a></li>
+              <li class="drop-burger">
+                <a href="#">pages <i class="fa-solid fa-angle-right"></i></a>
+                <ul class="drop-burger__lists">
+                  <li><a href="#">wine restaurant</a></li>
+                  <li><a href="#">school</a></li>
+                  <li><a href="#">wine shop</a></li>
+                </ul>
+              </li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -104,13 +128,15 @@
     <main>
       <!-- || Hero Section -->
 
-      <section class="hero general-section">
+      <section class="hero">
         <div class="hero-content general-content">
           <div class="hero-content__icon-box">
             <img
               class="hero-content__icon"
               src="./images/icon.svg"
               alt="icon"
+              width="30"
+              height="50"
             />
             <p class="hero-content__description">
               Experience the Taste of Adventure with Vino Voyage
@@ -125,13 +151,15 @@
 
       <!-- || Welcome Section -->
 
-      <section class="welcome general-section">
+      <section class="welcome">
         <div class="welcome-content general-content">
           <div class="welcome-content__img-box">
             <img
               class="welcome-content__img"
               src="./images/restaurant1.jpg"
               alt="good service"
+              width="500"
+              height="600"
             />
           </div>
           <div class="welcome-content__cards">
@@ -178,16 +206,16 @@
       </section>
 
       <!-- || Main services -->
-      <section class="main-services general-section">
-        <h2 class="main-services-title">vino voyage main services</h2>
-        <p class="main-services-description">
+      <section class="main-services">
+        <h2 class="main-services__title">vino voyage main services</h2>
+        <p class="main-services__description">
           Vino Voyage offers a complete wine experience, from the vineyard and
           wine restaurant to the wine school and shop, and the hotel rooms with
           activities.
         </p>
 
         <div class="main-services__buttons general-content">
-          <button class="main-services__button active-button">
+          <button class="main-services__button main-services__button--active">
             <i class="fa-regular fa-building"></i> school
           </button>
           <button class="main-services__button">
@@ -198,16 +226,18 @@
           </button>
           <div class="main-services__container">
             <div class="main-services__container-box">
-              <div class="main-services__icon-wrapper icon-wrapper">
-                <i class="fa-regular fa-building"></i>
-                <p class="icon-paragraph">vino voyage school</p>
-              </div>
+              <a class="main-services__icon-link" href="#">
+                <div class="main-services__icon-wrapper icon-wrapper">
+                  <i class="fa-regular fa-building"></i>
+                  <p class="icon-paragraph">vino voyage school</p>
+                </div></a
+              >
               <h3 class="main-services__container-title">school</h3>
               <p class="main-services__container-description1">
                 At Vino Voyage's wine school, guests can learn about the art and
                 science of wine-making from our experienced professionals. Our
                 courses cover topics such as grape varieties, fermentation, and
-                aging, as well as wine tasting and pairing..
+                aging, as well as wine tasting and pairing.
               </p>
               <p class="main-services__container-description2">
                 Our goal is to provide a fun and interactive experience that
@@ -221,17 +251,21 @@
               class="main-services__container-img"
               src="./images/school.jpg"
               alt="school"
+              width="400"
+              height="400"
             />
           </div>
         </div>
       </section>
 
       <!-- || Our services -->
-      <section class="our-services general-section">
-        <div class="our-services__icon-wrapper icon-wrapper">
-          <i class="fa-regular fa-pen-to-square"></i>
-          <p class="icon-paragraph">our services</p>
-        </div>
+      <section class="our-services">
+        <a class="our-services__icon-link" href="#">
+          <div class="our-services__icon-wrapper icon-wrapper">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <p class="icon-paragraph">our services</p>
+          </div></a
+        >
         <h2 class="our-services__title">our services</h2>
         <p class="our-services__description">
           At Vino Voyage, we offer a complete wine experience for our guests.
@@ -261,7 +295,7 @@
           </div>
           <div class="our-services__card">
             <i class="our-services__card-icon fa-solid fa-shop"></i>
-            <h4 class="our-services__card-titlee">Wine Shop</h4>
+            <h4 class="our-services__card-title">Wine Shop</h4>
             <p class="our-services__card-description">
               Visit our shop for a wide selection of wines, including the finest
               from our vineyard. Wine tasting sessions are also available.
@@ -303,80 +337,88 @@
 
       <!-- || Why Choose Us -->
 
-      <section class="choose-container">
-        <div class="choose-container__counter-box">
-          <div class="choose-container__counter-blur">
-            <div class="choose-container__counters">
-              <div class="choose-container__counter">
-                <div class="choose-container__counter-number">100+</div>
-                <p class="choose-container__counter-title">project done</p>
+      <section class="choose">
+        <div class="counter-box">
+          <div class="counter-box__blur">
+            <div class="counter-box__blur-counters">
+              <div class="counter-box__blur-counter">
+                <span class="counter-box__blur-counter-number">100+</span>
+                <span class="counter-box__blur-counter-title"
+                  >project done</span
+                >
               </div>
-              <div class="choose-container__counter">
-                <div class="choose-container__counter-number">345</div>
-                <p class="choose-container__counter-title">people working</p>
+              <div class="counter-box__blur-counter">
+                <span class="counter-box__blur-counter-number">345</span>
+                <span class="counter-box__blur-counter-title"
+                  >people working</span
+                >
               </div>
-              <div class="choose-container__counter">
-                <div class="choose-container__counter-number">100+</div>
-                <p class="choose-container__counter-title">business partner</p>
+              <div class="counter-box__blur-counter">
+                <span class="counter-box__blur-counter-number">100+</span>
+                <span class="counter-box__blur-counter-title"
+                  >business partner</span
+                >
               </div>
-              <div class="choose-container__counter">
-                <div class="choose-container__counter-number">853+</div>
-                <p class="choose-container__counter-title">happy customers</p>
+              <div class="counter-box__blur-counter">
+                <span class="counter-box__blur-counter-number">853+</span>
+                <span class="counter-box__blur-counter-title"
+                  >happy customers</span
+                >
               </div>
             </div>
           </div>
         </div>
 
-        <div class="choose-container__content-box">
-          <div class="choose_container__icon-wrapper icon-wrapper">
-            <i class="fa-regular fa-pen-to-square"></i>
-            <p class="icon-paragraph">why choose us</p>
-          </div>
-          <h2 class="choose-container__content-title">
+        <div class="choose-content">
+          <a href="#" class="choose-content__icon-link">
+            <div class="choose-content__icon-wrapper icon-wrapper">
+              <i class="fa-regular fa-pen-to-square"></i>
+              <p class="icon-paragraph">why choose us</p>
+            </div></a
+          >
+          <h2 class="choose-content__title">
             few reasons why you should choose us
           </h2>
-          <p class="choose-container__content-description">
+          <p class="choose-content__description">
             Come experience the best of the wine industry with Vino Voyage! Our
             many years of experience, commitment to high quality, and focus on
             customer satisfaction make us the perfect choice for your next wine
             adventure.
           </p>
 
-          <div class="choose-container__list-box">
-            <div class="choose-container__list-item">
-              <div class="choose-container_list-icon">
+          <div class="choose-content__list-box">
+            <div class="choose-content__list-item">
+              <div class="choose-content_list-icon">
                 <i class="fa-solid fa-check"></i>
               </div>
-              <div class="choose-container__list-content">
-                <h5 class="choose-container__list-title">
-                  Years of experience
-                </h5>
-                <p class="choose-container__list-description">
+              <div class="choose-content__list-content">
+                <h5 class="choose-content__list-title">Years of experience</h5>
+                <p class="choose-content__list-description">
                   Vino Voyage has been in the wine industry for many years and
                   has developed a wealth of knowledge and expertise in
                   wine-making and hospitality
                 </p>
               </div>
             </div>
-            <div class="choose-container__list-item">
-              <div class="choose-container_list-icon">
+            <div class="choose-content__list-item">
+              <div class="choose-content_list-icon">
                 <i class="fa-solid fa-check"></i>
               </div>
-              <div class="choose-container__list-content">
-                <h5 class="choose-container__list-title">Happy customers</h5>
-                <p class="choose-container__list-description">
+              <div class="choose-content__list-content">
+                <h5 class="choose-content__list-title">Happy customers</h5>
+                <p class="choose-content__list-description">
                   Vino Voyage has a reputation for providing excellent service
                   and quality products.
                 </p>
               </div>
             </div>
-            <div class="choose-container__list-item">
-              <div class="choose-container_list-icon">
+            <div class="choose-content__list-item">
+              <div class="choose-content_list-icon">
                 <i class="fa-solid fa-check"></i>
               </div>
-              <div class="choose-container__list-content">
-                <h5 class="choose-container__list-title">High quality</h5>
-                <p class="choose-container__list-description">
+              <div class="choose-content__list-content">
+                <h5 class="choose-content__list-title">High quality</h5>
+                <p class="choose-content__list-description">
                   Vino Voyage takes great pride in the quality of their wines,
                   food, and accommodations.
                 </p>
@@ -388,10 +430,12 @@
 
       <!-- || Vino voyage gallery -->
       <section class="gallery">
-        <div class="gallery__icon-wrapper icon-wrapper">
-          <i class="fa-regular fa-pen-to-square"></i>
-          <p class="icon-paragraph">the gallery</p>
-        </div>
+        <a href="#" class="gallery__icon-link">
+          <div class="gallery__icon-wrapper icon-wrapper">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <p class="icon-paragraph">the gallery</p>
+          </div></a
+        >
         <h2 class="gallery__icon-title">vino voyage gallery</h2>
 
         <div class="gallery__carousel owl-carousel">
@@ -401,6 +445,8 @@
                 class="gallery__carousel-img"
                 src="./images/restaurant.jpg"
                 alt="restaurant"
+                width="400"
+                height="500"
               />
             </div>
             <h4 class="gallery__carousel-title">The outdoor space</h4>
@@ -412,6 +458,8 @@
                 class="gallery__carousel-img"
                 src="./images/petfriendly.jpg"
                 alt="lovelydog"
+                width="400"
+                height="500"
               />
             </div>
             <h4 class="gallery__carousel-title">pet friendly</h4>
@@ -425,6 +473,8 @@
                 class="gallery__carousel-img"
                 src="./images/photoshoot.jpg"
                 alt="photoshoot"
+                width="400"
+                height="500"
               />
             </div>
             <h4 class="gallery__carousel-title">photo shoot</h4>
@@ -438,6 +488,8 @@
                 class="gallery__carousel-img"
                 src="./images/crushingwine.jpg"
                 alt="crushing"
+                width="400"
+                height="500"
               />
             </div>
             <h4 class="gallery__carousel-title">grape crushing</h4>
@@ -451,6 +503,8 @@
                 class="gallery__carousel-img"
                 src="./images/vineyard.jpg"
                 alt="picking"
+                width="400"
+                height="500"
               />
             </div>
             <h4 class="gallery__carousel-title">grape picking</h4>
@@ -464,6 +518,8 @@
                 class="gallery__carousel-img"
                 src="./images/room.jpg"
                 alt="restaurant"
+                width="400"
+                height="500"
               />
             </div>
             <h4 class="gallery__carousel-title">luxurious rooms</h4>
@@ -478,10 +534,12 @@
 
       <section class="customers general-content">
         <div class="customers__testimonial-card">
-          <div class="customers__testimonial-icon-wrapper icon-wrapper">
-            <i class="fa-regular fa-pen-to-square"></i>
-            <p class="icon-paragraph">testimonial</p>
-          </div>
+          <a href="#" class="customer__testimonial-icon-link">
+            <div class="customers__testimonial-icon-wrapper icon-wrapper">
+              <i class="fa-regular fa-pen-to-square"></i>
+              <p class="icon-paragraph">testimonial</p>
+            </div></a
+          >
           <h3 class="customers__testimonial-title">customers says</h3>
 
           <div class="customers__testimonial-wrapper">
@@ -489,7 +547,12 @@
               <div class="customers__review-box general-flex">
                 <div class="customers__image-box">
                   <div class="customers__img">
-                    <img src="./images/customer.jpg" alt="customergirl" />
+                    <img
+                      src="./images/customer.jpg"
+                      alt="customergirl"
+                      width="70"
+                      height="70"
+                    />
                   </div>
                   <div>
                     <h5 class="customers__img-title">nancy luter</h5>
@@ -515,10 +578,12 @@
               </div>
             </div>
             <div class="customers__questions-card">
-              <div class="customers__questions-icon-wrapper icon-wrapper">
-                <i class="fa-regular fa-pen-to-square"></i>
-                <p class="icon-paragraph">any question</p>
-              </div>
+              <a class="customers__question-icon-link" href="#">
+                <div class="customers__questions-icon-wrapper icon-wrapper">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <p class="icon-paragraph">any question</p>
+                </div></a
+              >
               <h4 class="customers__questions-title">
                 99.9% Customer Satisfation Based
               </h4>
@@ -530,17 +595,21 @@
                 <div class="customers__phone-icon-box general-grid">
                   <i class="fa-solid fa-phone"></i>
                 </div>
-                <p class="customers__phone-description">(003) 123 456 7890</p>
+                <span class="customers__phone-description"
+                  >(003) 123 456 7890</span
+                >
               </div>
             </div>
           </div>
         </div>
 
         <div class="customers__form-card">
-          <div class="customers__form-icon-wrapper icon-wrapper">
-            <i class="fa-regular fa-pen-to-square"></i>
-            <p class="icon-paragraph">meet us</p>
-          </div>
+          <a href="#" class="customers__form-icon-link">
+            <div class="customers__form-icon-wrapper icon-wrapper">
+              <i class="fa-regular fa-pen-to-square"></i>
+              <p class="icon-paragraph">meet us</p>
+            </div></a
+          >
           <h3 class="customers__form-title">appoitment form</h3>
           <div class="customers__form-wrapper">
             <form class="customers__form" action="vinovoyage">
@@ -561,56 +630,60 @@
 
       <!--|| Big clients section -->
       <section class="clients-container general-content">
-        <div class="clients-container__icon-wrapper icon-wrapper">
-          <i class="fa-regular fa-pen-to-square"></i>
-          <p class="icon-paragraph">clients</p>
-        </div>
+        <a href="#" class="clients-container__icon-link">
+          <div class="clients-container__icon-wrapper icon-wrapper">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <p class="icon-paragraph">clients</p>
+          </div></a
+        >
         <h3 class="clients-container__title">Our Trusted Big Clients!</h3>
 
         <div class="clients-container__cards general-flex">
           <div class="clients-container__card">
             <i class="fa-solid fa-wine-bottle"></i>
-            <p
+            <span
               class="clients-container__card-title clients-container__card-title--mulish"
             >
               Cork & Bottle
-            </p>
+            </span>
           </div>
           <div class="clients-container__card">
             <i class="fa-solid fa-dungeon"></i>
-            <p
+            <span
               class="clients-container__card-title clients-container__card-title--playfair"
             >
               Travel Tribe
-            </p>
+            </span>
           </div>
           <div class="clients-container__card">
             <i class="fa-regular fa-heart"></i>
-            <p
+            <span
               class="clients-container__card-title clients-container__card-title--tulpen"
             >
               Everafter
-            </p>
+            </span>
           </div>
           <div class="clients-container__card">
             <i class="fa-solid fa-camera-retro"></i>
-            <p
+            <span
               class="clients-container__card-title clients-container__card-title--reem"
             >
               FocalPoint
-            </p>
+            </span>
           </div>
         </div>
       </section>
 
       <!--|| Booking section -->
-      <section class="booking-container general-section">
+      <section class="booking-container">
         <div class="booking-container__describe general-content">
           <div class="booking-container__icon-box">
-            <div class="booking-container__icon-wrapper icon-wrapper">
-              <i class="fa-regular fa-pen-to-square"></i>
-              <p class="icon-paragraph">price and plan</p>
-            </div>
+            <a href="#" class="booking-container__icon-link">
+              <div class="booking-container__icon-wrapper icon-wrapper">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <p class="icon-paragraph">price and plan</p>
+              </div></a
+            >
             <h2 class="bookin-container__title">
               discover the perfect package
             </h2>
@@ -627,7 +700,7 @@
             <div class="booking-container__price-box general-flex">
               <div class="bookign-container__price-wrapper">
                 <h5 class="booking-container__price-title">standard</h5>
-                <p class="booking-container__prices">$ 599.00</p>
+                <span class="booking-container__prices">$ 599.00</span>
               </div>
               <p class="booking-container__price-description">Trust quality</p>
             </div>
@@ -666,10 +739,10 @@
             <div class="booking-container__price-box general-flex">
               <div class="booking-container__price-wrapper">
                 <h5 class="booking-container__price-title">deluxe</h5>
-                <p class="booking-container__prices">$ 699.00</p>
+                <span class="booking-container__prices">$ 699.00</span>
               </div>
               <div class="booking-container__popular-price">
-                <p class="booking-container__popular-title">popular</p>
+                <span class="booking-container__popular-title">popular</span>
                 <p class="booking-container__price-description">
                   Trust quality
                 </p>
@@ -709,7 +782,7 @@
             <div class="booking-container__price-box general-flex">
               <div class="booking-container__price-wrapper">
                 <h5 class="booking-container__price-title">Luxury</h5>
-                <p class="booking-container__prices">$ 799.00</p>
+                <span class="booking-container__prices">$ 799.00</span>
               </div>
               <p class="booking-container__price-description">Trust quality</p>
             </div>
@@ -780,11 +853,13 @@
 
       <!-- || Blogs section -->
 
-      <section class="blog-container general-section">
-        <div class="blog-container__icon-wrapper icon-wrapper">
-          <i class="fa-regular fa-pen-to-square"></i>
-          <p class="icon-paragraph">blog & articles</p>
-        </div>
+      <section class="blog-container">
+        <a class="blog-container__icon-link" href="#">
+          <div class="blog-container__icon-wrapper icon-wrapper">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <p class="icon-paragraph">blog & articles</p>
+          </div></a
+        >
         <h2 class="blog-container__title">latest news and articles</h2>
         <div class="blog-container__cards general-content general-flex">
           <div class="blog-container__card">
@@ -871,12 +946,14 @@
     <!-- || Footer -->
     <footer>
       <section class="footer-container general-content">
-        <div class="footer-container__contacts">
+        <div class="footer-container__contacts general-content">
           <div class="footer-container__logo-box">
             <img
               class="footer-container__logo"
               src="./images/icon.svg"
               alt="icon"
+              width="50"
+              height="80"
             />
           </div>
           <div class="footer-container__icon-boxes">
@@ -945,7 +1022,9 @@
             </div>
           </div>
           <div class="footer-container__quick-links">
-            <div class="footer-container__list-box">
+            <div
+              class="footer-container__list-box footer-container__list-box--margin"
+            >
               <h5 class="footer-container__list-title">explore</h5>
               <ul class="footer-container__list">
                 <li><a href="#">about us</a></li>
