@@ -320,8 +320,7 @@ h5 {
 /* || Hero Section */
 
 .hero {
-  background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
+  background: url("../images/background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #0000003c;
@@ -1137,7 +1136,7 @@ h5 {
   text-align: left;
   display: flex;
   flex-direction: column;
-  height: auto;
+  min-height: 650px;
 }
 
 .blog-container__first-blog {
@@ -1154,7 +1153,7 @@ h5 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 361px;
+  height: 361px;
   margin-bottom: 55px;
 }
 

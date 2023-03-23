@@ -235,6 +235,7 @@
 
   .welcome-content__options-card {
     justify-content: center;
+    text-align: left;
   }
   .main-services {
     padding: 70px 0 650px;
@@ -395,6 +396,22 @@
 
   .blog-container {
     padding: 50px 0;
+  }
+
+  .blog-container__cards {
+    justify-content: unset;
+    gap: 20px;
+  }
+
+  .blog-container__card {
+    min-height: 620px;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .blog-container__first-blog,
+  .blog-container__second-blog {
+    min-height: 300px;
   }
 
   .blog-container__card-position {
